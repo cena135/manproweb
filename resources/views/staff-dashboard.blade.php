@@ -1,5 +1,5 @@
 <!-- resources/views/staff-dashboard.blade.php -->
-@extends('layouts.app')
+@extends('staff.app')
 
 @section('title', 'Staff Dashboard')
 

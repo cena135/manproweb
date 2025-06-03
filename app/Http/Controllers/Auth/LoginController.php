@@ -46,6 +46,8 @@ class LoginController extends Controller
             return redirect()->route('staff-dashboard');
         } elseif ($user->role === 'student') {
             return redirect()->route('student-dashboard');
+        } elseif ($user->role === 'staff-admin') {
+            return redirect()->route('staff-admin-dashboard');
         }
 
         return redirect('/'); // Default fallback

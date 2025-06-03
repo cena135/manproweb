@@ -18,4 +18,9 @@ class DashboardController extends Controller
     {
         return view('student-dashboard');  // Return view for student dashboard
     }
+
+    public function staffAdmin()
+    {
+        return view('staff-admin-dashboard');  // Return view for student dashboard
+    }
 }

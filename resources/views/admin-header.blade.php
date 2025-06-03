@@ -1,6 +1,6 @@
 <!-- resources/views/header.blade.php -->
 <header class="bg-blue-200 text-gray-900 flex items-center justify-between p-4 shadow">
-  <h1 class="text-lg font-semibold">Staff Dashboard</h1>
+  <h1 class="text-lg font-semibold">Staff Admin Dashboard</h1>
   <!-- Hamburger Button -->
   <button id="menu-toggle" class="focus:outline-none">
     <!-- Hamburger Icon -->
@@ -15,8 +15,9 @@
 <!-- Navigation Menu -->
 <nav id="menu" class="bg-blue-100 text-gray-900 hidden shadow">
   <ul class="flex flex-col">
-    <li><a href="{{ route('staff-dashboard') }}" class="block px-4 py-2 hover:bg-blue-200">Home</a></li>
-    <li><a href="{{ route('staff-jadwal-ujian') }}" class="block px-4 py-2 hover:bg-blue-200">Jadwal Ujian</a></li>
+    <li><a href="{{ route('staff-admin-dashboard') }}" class="block px-4 py-2 hover:bg-blue-200">Home</a></li>
+    <li><a href="{{ route('admin-req') }}" class="block px-4 py-2 hover:bg-blue-200">Admin</a></li>
+    
     <li>
       <form action="{{ route('logout') }}" method="POST" class="block">
         @csrf

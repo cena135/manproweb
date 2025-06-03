@@ -25,5 +25,12 @@ class UserSeeder extends Seeder
             'password' => Hash::make('studentpassword'),
             'role' => 'student',
         ]);
+
+        // User::create([
+        //     'name' => 'Admin Staff',
+        //     'email' => 'admin.staff@john.petra.ac.id',
+        //     'password' => Hash::make('adminpassword'),
+        //     'role' => 'staff-admin',
+        // ]);
     }
 }

@@ -21,6 +21,10 @@ Route::get('/student-dashboard', [DashboardController::class, 'student'])
     ->middleware('auth')
     ->name('student-dashboard');
 
+Route::get('/staff-admin-dashboard', [DashboardController::class, 'staffAdmin'])
+    ->middleware('auth')
+    ->name('staff-admin-dashboard');
+
 // Optional home route
 Route::get('/home', function () {
     return view('home');
@@ -50,6 +54,11 @@ Route::get('/register-overseer', [App\Http\Controllers\OverseerRegistrationContr
 Route::post('/register-overseer', [App\Http\Controllers\OverseerRegistrationController::class, 'store'])->name('register-overseer.store');
 
 // Route::get('/jadwal-mengawas', [MyScheduleController::class, 'index'])->middleware('auth')->name('my-schedule');
+
+Route::get('/staff-jadwal-ujian', [ScheduleController::class, 'teacherIndex'])->name('staff-jadwal-ujian');
+
+Route::get('/admin-req', [ScheduleController::class, 'adminIndex'])->name('admin-req');
+
 
 
 
